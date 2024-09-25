@@ -16,5 +16,12 @@ namespace projiect01
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WiFiServer server = new WiFiServer(8080);
+            server.StartServer();
+            Console.WriteLine("输出结束");
+        }
     }
 }

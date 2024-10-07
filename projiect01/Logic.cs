@@ -31,6 +31,9 @@ namespace projiect01
                     case "关机":
                         System.Diagnostics.Process.Start("shutdown", "/s /t 60");
                         break;
+                    case "取消关机":
+                        System.Diagnostics.Process.Start("shutdown", "-a");
+                        break;
                     default:
                         break;
                 }
